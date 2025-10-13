@@ -3,6 +3,7 @@ import { HeaderText } from "../atoms/HeaderText";
 import { ProjectCard } from "../cards/ProjectCard";
 import projectOne from "@/assets/images/projectOne.svg";
 import { Check } from "lucide-react";
+import CustomButton from "../atoms/CustomButton";
 
 const CoreProjects = () => {
   return (
@@ -42,7 +43,7 @@ const CoreProjects = () => {
 education, welfare, and culture."
         />
 
-        <div className="mt-16 flex items-center justify-between">
+        <div className="my-16 flex items-center justify-between">
           {threePillars.map(
             ({ benefits, desc, icon: Icon, id, image, title }) => {
               return (
@@ -83,7 +84,7 @@ education, welfare, and culture."
                                 strokeWidth={3}
                               />
                             </div>
-                            <span className="text-green_200 text-base">
+                            <span className="text-green_200 text-base font-normal">
                               {feature}
                             </span>
                           </div>
@@ -95,6 +96,18 @@ education, welfare, and culture."
               );
             }
           )}
+        </div>
+
+        <div className="flex flex-col justify-center items-center">
+          <CustomButton
+            variant="secondary"
+            className="uppercase w-[342px] h-[44px]"
+          >
+            Learn About Our Programs
+          </CustomButton>
+          <p className="text-sm text-green_200 pt-3 font-normal">
+            Partnership opportunities available for each program area
+          </p>
         </div>
       </div>
     </div>

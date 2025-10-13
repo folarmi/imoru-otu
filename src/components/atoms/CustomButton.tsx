@@ -14,7 +14,7 @@ const CustomButton: React.FC<ButtonProps> = ({
   className = "",
   children,
   loading,
-  primaryButtonSize = "base",
+  primaryButtonSize = "xs",
   disabled,
   ...rest
 }) => {
@@ -49,7 +49,7 @@ const CustomButton: React.FC<ButtonProps> = ({
 
   const mergedClassName = `${baseClasses} ${
     disabled ? disabledClasses : ""
-  } ${className} whitespace-nowrap py-2 px-3 rounded-xl font-normal`;
+  } ${className} whitespace-nowrap py-2 px-3 rounded-md font-normal`;
 
   return (
     <button

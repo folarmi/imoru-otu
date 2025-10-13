@@ -2,6 +2,7 @@ import {
   CoreProjects,
   Header,
   HeroSection,
+  JoinClub,
   Stat,
 } from "@/components/organisms";
 
@@ -12,6 +13,7 @@ const Home = () => {
       <HeroSection />
       <Stat />
       <CoreProjects />
+      <JoinClub />
     </div>
   );
 };

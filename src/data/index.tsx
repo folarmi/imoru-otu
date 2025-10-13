@@ -1,9 +1,11 @@
 import {
   BookOpen,
+  Calendar,
   GraduationCap,
   HandHeart,
   Heart,
   Landmark,
+  LucideGlobe,
   Shield,
   Users,
 } from "lucide-react";
@@ -116,5 +118,26 @@ export const threePillars = [
     ],
     image: pillarOne,
     icon: Landmark,
+  },
+];
+
+export const joinOurClub = [
+  {
+    id: 1,
+    name: "Community Connection",
+    desc: "Join a network of dedicated individuals committed to Imoru's progress.",
+    icon: Users,
+  },
+  {
+    id: 2,
+    name: "Monthly Meetings",
+    desc: "Participate in regular gatherings to plan initiatives and celebrate culture.",
+    icon: Calendar,
+  },
+  {
+    id: 3,
+    name: "Make a Difference",
+    desc: "Your membership dues directly fund scholarships and community projects.",
+    icon: LucideGlobe,
   },
 ];

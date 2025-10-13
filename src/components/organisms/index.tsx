@@ -3,3 +3,4 @@ export * from "./Header";
 export * from "./HeroSection";
 export * from "./Stat";
 export * from "./CoreProjects";
+export * from "./JoinClub";
