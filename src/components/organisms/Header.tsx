@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import CustomButton from "../atoms/CustomButton";
 const Header = () => {
   return (
-    <nav className="mx-6">
+    <nav className="">
       <div className="flex items-center justify-between py-2">
         <section className="flex items-center">
           <img src={logo} className="mr-2" />

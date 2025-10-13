@@ -1,4 +1,13 @@
-import { GraduationCap, Heart, Shield, Users } from "lucide-react";
+import {
+  BookOpen,
+  GraduationCap,
+  HandHeart,
+  Heart,
+  Landmark,
+  Shield,
+  Users,
+} from "lucide-react";
+import pillarOne from "@assets/images/pillarOne.svg";
 
 export const headerItems = [
   {
@@ -47,5 +56,65 @@ export const stats = [
     num: "100%",
     desc: "Transparency",
     icon: Shield,
+  },
+];
+
+export const statTwo = [
+  {
+    id: 1,
+    number: "100+",
+    desc: "Scholarships Awarded",
+  },
+  {
+    id: 2,
+    number: "₦2M+",
+    desc: "In Educational Support",
+  },
+  {
+    id: 3,
+    number: "15+",
+    desc: "Cultural Events Held",
+  },
+];
+
+export const threePillars = [
+  {
+    id: 1,
+    title: "Educational Upliftment",
+    desc: "Providing scholarships, school supplies, and mentorship to underserved students in Imoru. We believe education is the key to breaking the cycle of poverty.",
+    benefits: [
+      "Full & Partial Scholarships",
+      "School Supply Distribution",
+      "Academic Mentorship",
+      "Career Guidance",
+    ],
+    image: pillarOne,
+    icon: BookOpen,
+  },
+  {
+    id: 2,
+    title: "Welfare & Support",
+    desc: "Supporting families in need with emergency assistance, healthcare access, and community development initiatives that create lasting positive change.",
+    benefits: [
+      "Emergency Financial Aid",
+      "Healthcare Support",
+      "Food Security Programs",
+      "Community Development",
+    ],
+    image: pillarOne,
+    icon: HandHeart,
+  },
+  {
+    id: 3,
+    title: "Cultural Development",
+    desc: "Preserving and promoting Imoru's rich cultural heritage through festivals, language programs, and traditional arts preservation for future generations.",
+    benefits: [
+      "Cultural Festivals",
+      "Language Preservation",
+      "Traditional Arts",
+      "Heritage Documentation",
+    ],
+    image: pillarOne,
+    icon: Landmark,
   },
 ];
