@@ -1,12 +1,13 @@
-import { joinOurClub } from "@/data";
+import { joinOurClub, memberShipInfo, yourFund } from "@/data";
 import { HeaderText } from "../atoms/HeaderText";
 import CustomButton from "../atoms/CustomButton";
 
 const JoinClub = () => {
   return (
-    <div className="mt-12 py-20 px-11 bg-custom-gradient flex items-center justify-between">
-      <section>
+    <div className="mt-12 py-20 px-11 bg-custom-gradient flex items-center justify-between rounded-lg">
+      <section className="w-1/2 mr-12">
         <HeaderText
+          className="text-left"
           title="Join the Socio-Cultural Club"
           subtitle="IPG is more than an NGO—it's a community. Our members are the heart of everything we do, contributing time, resources, and passion to uplift Imoru."
         />
@@ -37,7 +38,40 @@ const JoinClub = () => {
         </CustomButton>
       </section>
 
-      <section></section>
+      <section className="bg-white border-2 border-secondary rounded-lg p-9 w-1/2">
+        <p className="font-bold text-2xl text-secondary playfair">
+          Membership Information
+        </p>
+
+        <div className="mt-6">
+          {memberShipInfo.map(({ desc, id, name }) => {
+            return (
+              <div
+                key={id}
+                className="flex items-center justify-between py-4 border-b border-gray_200"
+              >
+                <p className="text-base text-green_200">{name}</p>
+                <p className="text-secondary font-bold">{desc}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="bg-yellow_200 mt-6 rounded-lg py-8 px-6">
+          <p className="font-bold text-base text-secondary playfair">
+            What Your Dues Fund:
+          </p>
+
+          {yourFund.map(({ id, name }) => {
+            return (
+              <div key={id} className="flex items-center gap-y-2">
+                <div className="bg-yellow_100 h-1 w-1 rounded-full mr-2"></div>
+                <p className="text-green_200 text-sm">{name}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 };

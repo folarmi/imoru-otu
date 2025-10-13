@@ -141,3 +141,36 @@ export const joinOurClub = [
     icon: LucideGlobe,
   },
 ];
+
+export const memberShipInfo = [
+  {
+    id: 1,
+    name: "Monthly Dues:",
+    desc: "₦5,000",
+  },
+  {
+    id: 2,
+    name: "Meeting Schedule:",
+    desc: "Monthly",
+  },
+  {
+    id: 3,
+    name: "Location:",
+    desc: "Imoru, Ondo State",
+  },
+];
+
+export const yourFund = [
+  {
+    id: 1,
+    name: "Direct student scholarships and educational materials",
+  },
+  {
+    id: 2,
+    name: "Community welfare and emergency assistance programs",
+  },
+  {
+    id: 3,
+    name: "Cultural events and heritage preservation initiatives",
+  },
+];

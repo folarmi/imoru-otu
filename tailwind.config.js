@@ -14,6 +14,7 @@ export default {
         orange_300: "rgba(201, 180, 131, 0.2)",
         green_200: "#3E746F",
         yellow_100: "#FFBF00",
+        yellow_200: "#C9B48333",
         gray_100: "#3B3D40",
         gray_200: "#E0DCD1",
       },
