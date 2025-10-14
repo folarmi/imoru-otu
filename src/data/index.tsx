@@ -4,9 +4,11 @@ import {
   GraduationCap,
   HandHeart,
   Heart,
+  HeartHandshake,
   Landmark,
   LucideGlobe,
   Shield,
+  UserPlus,
   Users,
 } from "lucide-react";
 import pillarOne from "@assets/images/pillarOne.svg";
@@ -172,5 +174,70 @@ export const yourFund = [
   {
     id: 3,
     name: "Cultural events and heritage preservation initiatives",
+  },
+];
+
+export const makeADifference = [
+  {
+    id: 1,
+    name: "Sponsor Sustainable Impact",
+    desc: "Partner with us to fund scholarships, school supplies, and mentorship programs that create lasting change for students in Imoru.",
+    features: [
+      "Tax-deductible contribution",
+      "Transparent impact reporting",
+      "Connect with beneficiaries (optional)",
+    ],
+    buttonText: "Become A Sponsor",
+    icon: HeartHandshake,
+    buttonBgColor: "#FFBF00",
+    iconBgColor: "#FFBF001A",
+    iconColor: "#FFBF00",
+    buttonTextColor: "#004D45",
+  },
+  {
+    id: 2,
+    name: "Join Our Community",
+    desc: "Become a member or volunteer to actively participate in programs, events, and initiatives that transform lives.",
+    features: [
+      "Hands-on community impact",
+      "Network with like-minded individuals",
+      "Monthly meetings and cultural events",
+    ],
+    buttonText: "Volunteer your time",
+    icon: UserPlus,
+    buttonBgColor: "#004D45",
+    iconBgColor: "#004D451A",
+    iconColor: "#004D45",
+    buttonTextColor: "#FFFFFF",
+  },
+];
+
+export const newsAndEvents = [
+  {
+    id: 1,
+    date: "March 15, 2025",
+    tag: "Upcoming Event",
+    title: "Monthly Meeting: Planning 2025 Initiatives",
+    summary:
+      "Join us for our monthly gathering to discuss upcoming scholarship programs and cultural events.",
+    location: "Community Hall, Imoru",
+  },
+  {
+    id: 2,
+    date: "February 28, 2025",
+    tag: "Recent News",
+    title: "20 Students Receive Full Scholarships",
+    summary:
+      "Imoru Progressive Group awards full academicyear scholarships to 20 outstanding students from underprivileged families.",
+    location: "",
+  },
+  {
+    id: 2,
+    date: "January 10, 2025",
+    tag: "Recent News",
+    title: "Annual Cultural Festival Success",
+    summary:
+      "Over 500 community members celebrated Imoru's heritage at our annual cultural festival.",
+    location: "Imoru Town Square",
   },
 ];

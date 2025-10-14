@@ -19,7 +19,9 @@ export default {
         gray_200: "#E0DCD1",
       },
       boxShadow: {},
-      dropShadow: {},
+      dropShadow: {
+        card: "0px 1px 2px rgba(0, 0, 0, 0.05)",
+      },
     },
   },
   plugins: [],

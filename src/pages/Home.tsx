@@ -3,6 +3,7 @@ import {
   Header,
   HeroSection,
   JoinClub,
+  LatestNewsAndEvents,
   MakeADifference,
   Stat,
 } from "@/components/organisms";
@@ -16,6 +17,7 @@ const Home = () => {
       <CoreProjects />
       <JoinClub />
       <MakeADifference />
+      <LatestNewsAndEvents />
     </div>
   );
 };
