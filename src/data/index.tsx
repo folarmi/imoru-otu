@@ -235,7 +235,7 @@ export const newsAndEvents = [
     location: "",
   },
   {
-    id: 2,
+    id: 3,
     date: "January 10, 2025",
     tag: "Recent News",
     title: "Annual Cultural Festival Success",
