@@ -1,13 +1,16 @@
 import {
   BookOpen,
   Calendar,
+  Facebook,
   GraduationCap,
   HandHeart,
   Heart,
   HeartHandshake,
+  Instagram,
   Landmark,
   LucideGlobe,
   Shield,
+  Twitter,
   UserPlus,
   Users,
 } from "lucide-react";
@@ -241,3 +244,28 @@ export const newsAndEvents = [
     location: "Imoru Town Square",
   },
 ];
+
+export const footerData = {
+  organization: {
+    name: "Imoru Progressive Group",
+    description:
+      "Empowering Imoru's youth through education, cultural preservation, and community welfare since 2019.",
+  },
+  quickLinks: [
+    { id: 1, label: "About Us", href: "#about" },
+    { id: 2, label: "Our Programs", href: "#programs" },
+    { id: 3, label: "Partnership Opportunities", href: "#partnership" },
+    { id: 4, label: "Annual Reports", href: "#reports" },
+    { id: 5, label: "Our Governance", href: "#governance" },
+  ],
+  contact: {
+    location: "Imoru, Ondo State, Nigeria",
+    phone: "+234 XXX XXX XXXX",
+    email: "info@ipgimoru.org",
+  },
+  social: [
+    { id: 1, name: "Facebook", icon: Facebook, href: "#" },
+    { id: 2, name: "Twitter", icon: Twitter, href: "#" },
+    { id: 3, name: "Instagram", icon: Instagram, href: "#" },
+  ],
+};

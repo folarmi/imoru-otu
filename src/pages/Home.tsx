@@ -1,5 +1,6 @@
 import {
   CoreProjects,
+  Footer,
   Header,
   HeroSection,
   JoinClub,
@@ -18,6 +19,7 @@ const Home = () => {
       <JoinClub />
       <MakeADifference />
       <LatestNewsAndEvents />
+      <Footer />
     </div>
   );
 };

@@ -6,3 +6,4 @@ export * from "./CoreProjects";
 export * from "./JoinClub";
 export * from "./MakeADifference";
 export * from "./LatestNewsAndEvents";
+export * from "./Footer";
