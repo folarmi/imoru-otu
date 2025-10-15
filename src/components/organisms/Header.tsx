@@ -8,38 +8,13 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    // <nav className="">
-    //   <div className="flex items-center justify-between py-2">
-    //     <section className="flex items-center">
-    //       <img src={logo} className="mr-2" loading="lazy" />
-    //       <p className="uppercase text-secondary font-semibold text-2xl leading-7">
-    //         Imoru otu atuluse socio-cultural club
-    //       </p>
-    //     </section>
-
-    //     <section className="flex items-center gap-x-5">
-    //       {headerItems?.map(({ id, link, name }) => {
-    //         return (
-    //           <Link className="font-medium text-base" key={id} to={link}>
-    //             {name}
-    //           </Link>
-    //         );
-    //       })}
-    //       <CustomButton variant="secondary" primaryButtonSize="xs">
-    //         Partner with Us
-    //       </CustomButton>
-    //       <CustomButton className="mr-4">Join Us</CustomButton>
-    //     </section>
-    //   </div>
-    //   <div className="h-[2px] w-full bg-border"></div>
-    // </nav>
-
+    // <nav className="sticky top-0 z-50 bg-white shadow-sm"> this makes it sticky
     <nav className="">
       <div className="flex items-center justify-between py-2">
         <section className="flex items-center">
           <img src={logo} className="mr-2" loading="lazy" />
           <p className="uppercase text-secondary font-semibold text-2xl leading-7 hidden lg:block">
-            Imoru otu atuluse socio-cultural club
+            Imoru otu atuluse socio-cultural club(IPG)
           </p>
           <p className="uppercase text-secondary font-semibold text-base leading-5 lg:hidden">
             Imoru otu atuluse

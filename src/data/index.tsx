@@ -1,4 +1,5 @@
 import {
+  Award,
   BookOpen,
   Calendar,
   Facebook,
@@ -10,11 +11,13 @@ import {
   Landmark,
   LucideGlobe,
   Shield,
+  ShieldCloseIcon,
   Twitter,
   UserPlus,
   Users,
 } from "lucide-react";
 import pillarOne from "@assets/images/pillarOne.svg";
+import countryList from "react-select-country-list";
 
 export const headerItems = [
   {
@@ -25,7 +28,7 @@ export const headerItems = [
   {
     id: 2,
     name: "About",
-    link: "",
+    link: "/about-us",
   },
   {
     id: 3,
@@ -269,3 +272,30 @@ export const footerData = {
     { id: 3, name: "Instagram", icon: Instagram, href: "#" },
   ],
 };
+
+export const getAllCountryOptions = () => {
+  return countryList().getData();
+};
+
+export const getAllCountryOptionsWithNames = () => {
+  const countries = countryList().getData();
+  return countries.map((country) => ({
+    value: country.label,
+    label: country.label,
+  }));
+};
+
+export const missionAndVision = [
+  {
+    id: 1,
+    name: "Our Mission",
+    desc: "To contribute to the holistic development of Imoru community through educational support, cultural preservation, and welfare programs that empower our youth and uplift the less privileged.",
+    icon: ShieldCloseIcon,
+  },
+  {
+    id: 2,
+    name: "Our Vision",
+    desc: "A thriving Imoru community where every youth has access to quality education, cultural heritage is preserved and celebrated, and no member is left behind in times of need.",
+    icon: Award,
+  },
+];
