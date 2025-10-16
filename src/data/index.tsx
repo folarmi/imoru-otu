@@ -11,7 +11,8 @@ import {
   Landmark,
   LucideGlobe,
   Shield,
-  ShieldCloseIcon,
+  ShieldAlertIcon,
+  Target,
   Twitter,
   UserPlus,
   Users,
@@ -290,12 +291,128 @@ export const missionAndVision = [
     id: 1,
     name: "Our Mission",
     desc: "To contribute to the holistic development of Imoru community through educational support, cultural preservation, and welfare programs that empower our youth and uplift the less privileged.",
-    icon: ShieldCloseIcon,
+    icon: Target,
   },
   {
     id: 2,
     name: "Our Vision",
     desc: "A thriving Imoru community where every youth has access to quality education, cultural heritage is preserved and celebrated, and no member is left behind in times of need.",
     icon: Award,
+  },
+];
+
+export const Objectives = [
+  {
+    id: 1,
+    name: "Contribute to the development of our community, Imoru Land",
+  },
+  {
+    id: 2,
+    name: "Promote the welfare of its members",
+  },
+  {
+    id: 3,
+    name: "Support our community in every possible way that will yield her development",
+  },
+  {
+    id: 4,
+    name: "Help and care for the less privileged in our community",
+  },
+  {
+    id: 5,
+    name: "Foster friendly relationship and mutual understanding amongst members",
+  },
+  {
+    id: 6,
+    name: "Improve and uplift the educational system of our youth",
+  },
+  {
+    id: 7,
+    name: "Protect and globally promote history, traditions and cultures of Imoru land",
+  },
+  {
+    id: 8,
+    name: "Partner with corporate bodies, individual and government in the provision of free health and basic education",
+  },
+];
+
+export const governance = [
+  {
+    id: 1,
+    name: "Board of Trustees",
+    desc: "2-6 members elected for a 5-year term, responsible for strategic oversight and policy-making",
+    icon: ShieldAlertIcon,
+  },
+  {
+    id: 2,
+    name: "Executive Committee",
+    desc: "Elected leadership serving 2-year renewable terms, managing day-to-day operations and programs",
+    icon: Users,
+  },
+  {
+    id: 3,
+    name: "Special Committees",
+    desc: "Project, Welfare, Planning, Electoral, and Reconciliation committees supporting specific initiatives",
+    icon: Heart,
+  },
+];
+
+export const executiveLeadership = [
+  {
+    id: 1,
+    name: "President",
+    type: "Executive Leadership",
+  },
+  {
+    id: 2,
+    name: "Vice President",
+    type: "Executive Leadership",
+  },
+  {
+    id: 3,
+    name: "General Secretary",
+    type: "Administrative Affairs",
+  },
+  {
+    id: 4,
+    name: "Financial Secretary",
+    type: "Financial Management",
+  },
+  {
+    id: 5,
+    name: "Social/Welfare Officer",
+    type: "Member Welfare",
+  },
+  {
+    id: 6,
+    name: "Public Relations Officer",
+    type: "Communications",
+  },
+];
+
+export const memberBenefits = [
+  {
+    id: 1,
+    name: "• Support for weddings (₦20,000 minimum)",
+  },
+  {
+    id: 2,
+    name: "• Bereavement support (₦20,000 minimum)",
+  },
+  {
+    id: 3,
+    name: "• Support for naming ceremonies and other life events",
+  },
+  {
+    id: 4,
+    name: "• Health and critical sickness assistance",
+  },
+  {
+    id: 5,
+    name: "• Access to educational programs and workshops",
+  },
+  {
+    id: 6,
+    name: "• Networking and community connection",
   },
 ];

@@ -1,4 +1,6 @@
 import { Banner } from "@/components/molecules/Banner";
+import { Governance } from "@/components/molecules/Governance";
+import { Membership } from "@/components/molecules/Membership";
 import { MissionAndObjectives } from "@/components/molecules/MissionAndObjectives";
 
 const Aboutus = () => {
@@ -10,6 +12,8 @@ const Aboutus = () => {
 cultural preservation, and social welfare support since 2019."
       />
       <MissionAndObjectives />
+      <Governance />
+      <Membership />
     </div>
   );
 };

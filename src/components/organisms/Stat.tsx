@@ -58,7 +58,7 @@ const Stat = () => {
         className="my-8 sm:my-12 md:my-16"
       />
 
-      <section className="flex flex-col sm:flex-row flex-1 items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-[60px] px-4 sm:px-0">
+      <section className="flex flex-col sm:flex-row flex-1 items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-[60px] px-4 sm:px-0 ">
         {statTwo?.map(({ desc, id, number }) => {
           return (
             <div
@@ -76,27 +76,29 @@ const Stat = () => {
         })}
       </section>
 
-      <StatCard
-        year="2019"
-        title="Foundation"
-        desc="IPG established with a vision to empower Imoru's youth through education and culture."
-        imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
-        img={scout}
-      />
-      <StatCard
-        year="2020-2022"
-        title="Growth & Impact"
-        desc="Expanded scholarship programs and cultural events, supporting 50+ students annually."
-        imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
-        img={scout}
-      />
-      <StatCard
-        year="2023-Present"
-        title="Sustained Excellence"
-        desc="Over 100 students supported, community welfare programs established, cultural heritage preserved."
-        imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
-        img={scout}
-      />
+      <div className="">
+        <StatCard
+          year="2019"
+          title="Foundation"
+          desc="IPG established with a vision to empower Imoru's youth through education and culture."
+          imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
+          img={scout}
+        />
+        <StatCard
+          year="2020-2022"
+          title="Growth & Impact"
+          desc="Expanded scholarship programs and cultural events, supporting 50+ students annually."
+          imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
+          img={scout}
+        />
+        <StatCard
+          year="2023-Present"
+          title="Sustained Excellence"
+          desc="Over 100 students supported, community welfare programs established, cultural heritage preserved."
+          imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
+          img={scout}
+        />
+      </div>
     </div>
   );
 };

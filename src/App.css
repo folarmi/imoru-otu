@@ -12,6 +12,10 @@
   .playfair {
     font-family: "Playfair Display", serif;
   }
+
+  .padding {
+    padding: 0 24px 0 24px;
+  }
 }
 
 .custom-background {

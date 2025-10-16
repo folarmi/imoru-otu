@@ -2,13 +2,13 @@ import React from "react";
 
 interface ImpactSectionProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   className?: string;
 }
 
 const HeaderText: React.FC<ImpactSectionProps> = ({
   title = "5+ Years of Measurable Impact",
-  subtitle = "Since 2019, we've been transforming lives and preserving culture in Imoru.",
+  subtitle = "",
   className = "",
 }) => {
   return (

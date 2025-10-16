@@ -3,91 +3,7 @@ import { Check } from "lucide-react";
 
 const MakeADifference = () => {
   return (
-    // <div className="bg-secondary py-20 px-11 flex flex-col justify-center items-center rounded-md">
-    //   <p className="playfair font-bold text-5xl text-white">
-    //     Ready to Make a Difference?
-    //   </p>
-    //   <p className="font-normal text-lg text-green_200 pt-4 text-white w-[672px] text-center">
-    //     Whether you're an organization ready to scale community impact or an
-    //     individual wanting to give your time, there's a place for you in our
-    //     mission.
-    //   </p>
-
-    //   <div className="mt-12 flex items-center justify-center gap-x-8">
-    //     {makeADifference.map(
-    //       ({
-    //         buttonBgColor,
-    //         buttonText,
-    //         buttonTextColor,
-    //         desc,
-    //         features,
-    //         icon: Icon,
-    //         iconBgColor,
-    //         iconColor,
-    //         id,
-    //         name,
-    //       }) => {
-    //         return (
-    //           <div
-    //             key={id}
-    //             className="flex flex-col  bg-white rounded-md p-8 w-[432px]"
-    //           >
-    //             <section className="flex items-center justify-center w-full">
-    //               <div
-    //                 className={`flex items-center justify-center rounded-full h-16 w-16`}
-    //                 style={{
-    //                   backgroundColor: iconBgColor,
-    //                 }}
-    //               >
-    //                 <Icon
-    //                   className="w-8 h-8"
-    //                   style={{
-    //                     color: iconColor,
-    //                   }}
-    //                 />
-    //               </div>
-    //             </section>
-    //             <p className="pt-6 font-bold playfair text-2xl text-secondary text-center">
-    //               {name}
-    //             </p>
-    //             <p className="pt-4 font-normal text-center text-base text-green_200">
-    //               {desc}
-    //             </p>
-
-    //             <div className="space-y-4 mt-6 mb-8">
-    //               {features?.map((feature, index) => (
-    //                 <div key={index} className="flex items-center gap-3">
-    //                   <div className="flex-shrink-0">
-    //                     <Check
-    //                       className="w-5 h-5 text-yellow_100"
-    //                       strokeWidth={3}
-    //                     />
-    //                   </div>
-    //                   <span className="text-green_200 text-base font-normal">
-    //                     {feature}
-    //                   </span>
-    //                 </div>
-    //               ))}
-    //             </div>
-
-    //             <button
-    //               className={`w-full rounded-md py-3 uppercase text-sm font-semibold`}
-    //               style={{
-    //                 background: buttonBgColor,
-    //                 color: buttonTextColor,
-    //               }}
-    //             >
-    //               {buttonText}
-    //             </button>
-    //           </div>
-    //         );
-    //       }
-    //     )}
-    //   </div>
-    // </div>
-
     <div className="bg-secondary py-16 md:py-20 px-6 sm:px-8 md:px-11 flex flex-col justify-center items-center rounded-md">
-      {/* HEADER */}
       <p className="playfair font-bold text-3xl sm:text-4xl md:text-5xl text-white text-center leading-tight">
         Ready to Make a Difference?
       </p>
@@ -98,8 +14,7 @@ const MakeADifference = () => {
         mission.
       </p>
 
-      {/* CARD SECTION */}
-      <div className="mt-10 md:mt-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 w-full justify-items-center">
+      <div className="mt-10 md:mt-12 flex flex-col lg:flex-row items-center justify-center gap-y-8 lg:gap-y-0 lg:gap-x-8">
         {makeADifference.map(
           ({
             buttonBgColor,
@@ -134,17 +49,14 @@ const MakeADifference = () => {
                 </div>
               </section>
 
-              {/* TITLE */}
               <p className="pt-5 sm:pt-6 font-bold playfair text-xl sm:text-2xl text-secondary text-center">
                 {name}
               </p>
 
-              {/* DESCRIPTION */}
               <p className="pt-3 sm:pt-4 font-normal text-center text-sm sm:text-base text-green_200 leading-relaxed">
                 {desc}
               </p>
 
-              {/* FEATURES */}
               <div className="space-y-3 sm:space-y-4 mt-5 sm:mt-6 mb-6 sm:mb-8">
                 {features?.map((feature, index) => (
                   <div
@@ -164,7 +76,6 @@ const MakeADifference = () => {
                 ))}
               </div>
 
-              {/* BUTTON */}
               <button
                 className="w-full rounded-md py-3 uppercase text-xs sm:text-sm font-semibold transition-transform duration-200 hover:scale-[1.02]"
                 style={{

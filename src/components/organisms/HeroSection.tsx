@@ -50,7 +50,7 @@ const HeroSection = () => {
     // </>
 
     <>
-      <div className="mt-6 rounded-tl-lg rounded-tr-lg overflow-hidden">
+      <div className="mt-6 rounded-tl-xl rounded-tr-xl overflow-hidden ">
         <div className="custom-background relative h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px]">
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 

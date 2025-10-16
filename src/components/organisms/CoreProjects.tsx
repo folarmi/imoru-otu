@@ -148,7 +148,7 @@ const CoreProjects = () => {
 education, welfare, and culture."
         />
 
-        <div className="my-8 sm:my-12 md:my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="my-8 sm:my-12 md:my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 ">
           {threePillars.map(
             ({ benefits, desc, icon: Icon, id, image, title }) => {
               return (
