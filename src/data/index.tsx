@@ -2,6 +2,7 @@ import {
   Award,
   BookOpen,
   Calendar,
+  Clock,
   Facebook,
   GraduationCap,
   HandHeart,
@@ -10,6 +11,9 @@ import {
   Instagram,
   Landmark,
   LucideGlobe,
+  Mail,
+  MapPin,
+  PhoneIcon,
   Shield,
   ShieldAlertIcon,
   Target,
@@ -41,8 +45,8 @@ export const headerItems = [
   },
   {
     id: 4,
-    name: "Contacts",
-    link: "",
+    name: "Contact Us",
+    link: "/get-in-touch",
   },
 ];
 
@@ -439,6 +443,25 @@ export const whoCanBeAMember = [
   },
 ];
 
+export const whoCanBeAMemberTwo = [
+  {
+    id: 1,
+    name: "• Imoru native or 10+ year resident",
+  },
+  {
+    id: 2,
+    name: "• Commitment fee: ₦1,000",
+  },
+  {
+    id: 3,
+    name: "• Monthly dues: ₦500",
+  },
+  {
+    id: 4,
+    name: "• Formal introduction required",
+  },
+];
+
 export const categoriesData = [
   {
     id: 1,
@@ -532,5 +555,78 @@ export const sampleNews = [
     title: "20 Students Receive Full Scholarships",
     summary:
       "Imoru Progressive Group awards full academic year scholarships to 20 outstanding students from underprivileged families. The scholarship covers tuition, books, and supplies for the 2025 academic year.",
+  },
+];
+
+export const contactUs = [
+  {
+    id: 1,
+    name: "Address",
+    icon: MapPin,
+    descOne: "No. 1, Palace Road, Imoru",
+    descTwo: "Ose LGA, Ondo State",
+    descThree: "Nigeria",
+  },
+  {
+    id: 2,
+    name: "Phone",
+    icon: PhoneIcon,
+    descOne: "+234 803 420 3441",
+    descTwo: "Mon - Fri, 9AM - 5PM",
+    descThree: "",
+  },
+  {
+    id: 3,
+    name: "Email",
+    icon: Mail,
+    descOne: "info@imoruprogressive.org",
+    descTwo: "We reply within 24 hours",
+    descThree: "",
+  },
+  {
+    id: 4,
+    name: "Office Hours",
+    icon: Clock,
+    descOne: "Monday - Friday",
+    descTwo: "9:00 AM - 5:00 PM",
+    descThree: "WAT",
+  },
+];
+
+export const partnership = [
+  {
+    id: 1,
+    name: "• Corporate organizations",
+  },
+  {
+    id: 2,
+    name: "• NGOs and foundations",
+  },
+  {
+    id: 3,
+    name: "• Government agencies",
+  },
+  {
+    id: 4,
+    name: "• Educational institutions",
+  },
+  {
+    id: 5,
+    name: "• Individual philanthropists",
+  },
+];
+
+export const visitUs = [
+  {
+    id: 1,
+    name: "Third Saturday of every month",
+  },
+  {
+    id: 2,
+    name: "Time: 3:00 PM - 5:00 PM",
+  },
+  {
+    id: 3,
+    name: " Location: Community Hall, Imoru",
   },
 ];

@@ -19,6 +19,7 @@ export default {
         yellow_200: "#C9B48333",
         gray_100: "#3B3D40",
         gray_200: "#E0DCD1",
+        gray_300: "#EBE8E0",
       },
       boxShadow: {},
       dropShadow: {
