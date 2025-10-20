@@ -34,7 +34,7 @@ export const headerItems = [
   {
     id: 3,
     name: "News and Events",
-    link: "",
+    link: "/news-and-events",
   },
   {
     id: 4,
@@ -431,7 +431,7 @@ export const whoCanBeAMember = [
     name: "• Monthly dues: ₦500 (subject to review)",
   },
   {
-    id: 2,
+    id: 4,
     name: "• Active participation in meetings and activities",
   },
 ];
