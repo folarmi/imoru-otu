@@ -18,6 +18,9 @@ import {
   Users,
 } from "lucide-react";
 import pillarOne from "@assets/images/pillarOne.svg";
+import eventOne from "@assets/images/eventOne.svg";
+import eventTwo from "@assets/images/eventTwo.svg";
+import eventThree from "@assets/images/eventThree.svg";
 import countryList from "react-select-country-list";
 
 export const headerItems = [
@@ -433,5 +436,101 @@ export const whoCanBeAMember = [
   {
     id: 4,
     name: "• Active participation in meetings and activities",
+  },
+];
+
+export const categoriesData = [
+  {
+    id: 1,
+    name: "All Categories",
+  },
+  {
+    id: 2,
+    name: "Upcoming Events",
+  },
+  {
+    id: 3,
+    name: "Recent News",
+  },
+];
+
+export const sampleEvents = [
+  {
+    id: 1,
+    img: eventOne,
+    date: "March 15, 2025",
+    title: "Monthly Meeting: Planning 2025 Initiatives",
+    summary:
+      "Join us for our monthly gathering to discuss upcoming scholarship programs and cultural events. All members are encouraged to attend and contribute ideas for community development projects.",
+    location: "Community Hall, Imoru",
+  },
+  {
+    id: 2,
+    img: eventThree,
+    date: "March 20, 2025",
+    title: "Educational Workshop: Digital Skills for Youth",
+    summary:
+      "Free digital literacy workshop for Imoru youth covering basic computer skills, internet safety, and online opportunities. Registration required.",
+    location: "Imoru Secondary School",
+  },
+  {
+    id: 3,
+    img: eventTwo,
+    date: "April 5, 2025",
+    title: "Annual Cultural Festival 2025",
+    summary:
+      "Save the date for our biggest cultural celebration of the year! Traditional dances, music, food, and heritage exhibitions. This year's theme: 'Preserving Our Legacy for Future Generations'.",
+    location: "Community Hall, Imoru",
+  },
+];
+
+export const sampleNews = [
+  {
+    id: 1,
+    img: eventTwo,
+    date: "February 28, 2025",
+    title: "20 Students Receive Full Scholarships",
+    summary:
+      "Imoru Progressive Group awards full academic year scholarships to 20 outstanding students from underprivileged families. The scholarship covers tuition, books, and supplies for the 2025 academic year.",
+  },
+  {
+    id: 2,
+    img: eventTwo,
+    date: "February 28, 2025",
+    title: "20 Students Receive Full Scholarships",
+    summary:
+      "Imoru Progressive Group awards full academic year scholarships to 20 outstanding students from underprivileged families. The scholarship covers tuition, books, and supplies for the 2025 academic year.",
+  },
+  {
+    id: 3,
+    img: eventTwo,
+    date: "February 28, 2025",
+    title: "20 Students Receive Full Scholarships",
+    summary:
+      "Imoru Progressive Group awards full academic year scholarships to 20 outstanding students from underprivileged families. The scholarship covers tuition, books, and supplies for the 2025 academic year.",
+  },
+  {
+    id: 4,
+    img: eventTwo,
+    date: "February 28, 2025",
+    title: "20 Students Receive Full Scholarships",
+    summary:
+      "Imoru Progressive Group awards full academic year scholarships to 20 outstanding students from underprivileged families. The scholarship covers tuition, books, and supplies for the 2025 academic year.",
+  },
+  {
+    id: 5,
+    img: eventTwo,
+    date: "February 28, 2025",
+    title: "20 Students Receive Full Scholarships",
+    summary:
+      "Imoru Progressive Group awards full academic year scholarships to 20 outstanding students from underprivileged families. The scholarship covers tuition, books, and supplies for the 2025 academic year.",
+  },
+  {
+    id: 6,
+    img: eventTwo,
+    date: "February 28, 2025",
+    title: "20 Students Receive Full Scholarships",
+    summary:
+      "Imoru Progressive Group awards full academic year scholarships to 20 outstanding students from underprivileged families. The scholarship covers tuition, books, and supplies for the 2025 academic year.",
   },
 ];

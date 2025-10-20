@@ -14,7 +14,7 @@ const Header = () => {
         <section className="flex items-center">
           <img src={logo} className="mr-2" loading="lazy" />
           <p className="uppercase text-secondary font-semibold text-2xl leading-7 hidden lg:block">
-            Imoru otu atuluse socio-cultural club(IPG)
+            Imoru otu atuluse socio-cultural club (IPG)
           </p>
           <p className="uppercase text-secondary font-semibold text-base leading-5 lg:hidden">
             Imoru otu atuluse
