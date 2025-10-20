@@ -2,6 +2,7 @@ import { Banner } from "@/components/molecules/Banner";
 import { Governance } from "@/components/molecules/Governance";
 import { Membership } from "@/components/molecules/Membership";
 import { MissionAndObjectives } from "@/components/molecules/MissionAndObjectives";
+import { OfficialAddress } from "@/components/molecules/OfficialAddress";
 
 const Aboutus = () => {
   return (
@@ -14,6 +15,7 @@ cultural preservation, and social welfare support since 2019."
       <MissionAndObjectives />
       <Governance />
       <Membership />
+      <OfficialAddress />
     </div>
   );
 };

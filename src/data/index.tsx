@@ -416,3 +416,22 @@ export const memberBenefits = [
     name: "• Networking and community connection",
   },
 ];
+
+export const whoCanBeAMember = [
+  {
+    id: 1,
+    name: "• Formal introduction by an existing member",
+  },
+  {
+    id: 2,
+    name: "• Commitment fee: ₦1,000",
+  },
+  {
+    id: 3,
+    name: "• Monthly dues: ₦500 (subject to review)",
+  },
+  {
+    id: 2,
+    name: "• Active participation in meetings and activities",
+  },
+];
