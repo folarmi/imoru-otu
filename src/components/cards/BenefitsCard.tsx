@@ -25,8 +25,9 @@ const BenefitsCard: React.FC<BenefitsCardProps> = ({
   buttonClassName = "bg-white text-secondary hover:bg-opacity-90 transition-colors",
 }) => {
   return (
+    // w-full lg:w-1/2
     <section
-      className={`flex flex-col bg-primary border-2 border-secondary rounded-lg py-4 px-6 w-full lg:w-1/2 drop-shadow-card h-auto ${className}`}
+      className={`flex flex-col bg-primary border-2 border-secondary rounded-lg py-4 px-6 drop-shadow-card h-auto ${className}`}
     >
       <p className="font-bold text-lg sm:text-xl md:text-2xl text-secondary playfair pb-6">
         {title}

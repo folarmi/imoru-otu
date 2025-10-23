@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { CheckCircle2 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useController, type UseControllerProps } from "react-hook-form";
 
 interface CustomInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -12,10 +12,10 @@ interface CustomInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   readOnly?: boolean;
   isVerified?: boolean;
   type?: string;
-  borderRadius?: string;
   className?: string;
-  onFocus?: () => void;
   onBlur?: () => void;
+  as?: "input" | "textarea";
+  rows?: number;
 }
 
 const CustomInput: React.FC<CustomInputProps> = ({
@@ -26,11 +26,11 @@ const CustomInput: React.FC<CustomInputProps> = ({
   readOnly,
   type,
   className,
-  borderRadius = "3xl",
-  onFocus,
   onBlur,
   isVerified,
   placeholder,
+  as = "input",
+  rows = 4,
   ...rest
 }) => {
   const {
@@ -42,50 +42,67 @@ const CustomInput: React.FC<CustomInputProps> = ({
     rules,
   });
 
-  const [isFocused, setIsFocused] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
 
-  useEffect(() => {
-    if (field.value) {
-      setIsFocused(true);
-    }
-  }, [field.value]);
+  const isTextarea = as === "textarea";
 
   return (
     <div
-      className={`relative flex flex-col gap-2 w-full h-[49px] rounded-lg ${className}`}
+      className={`relative flex flex-col gap-2 w-full ${
+        isTextarea ? "h-auto" : "h-[49px]"
+      } rounded-lg ${className}`}
     >
-      <input
-        readOnly={readOnly}
-        id={name}
-        type={showPassword ? "text" : type}
-        {...field}
-        {...rest}
-        className={`block w-full h-12 rounded-${borderRadius} px-4 text-sm bg-white border appearance-none focus:outline-none focus:ring-0 peer ${
-          error
-            ? "border border-red-500"
-            : "border-gray-300 focus:border-primary"
-        } ${isVerified ? "pr-12" : ""}`} // Add padding-right when verified icon is shown
-        placeholder={placeholder}
-        value={field.value || ""}
-        onFocus={() => {
-          setIsFocused(true);
-          if (onFocus) onFocus();
-        }}
-        onBlur={() => {
-          field.onBlur();
-          setIsFocused(!!field.value);
-          if (onBlur) onBlur();
-        }}
-        style={{
-          backgroundColor: readOnly ? "hsl(0,0%, 90%)" : "",
-          cursor: readOnly ? "not-allowed" : "initial",
-        }}
-      />
+      <label htmlFor={name} className={`text-sm font-medium text-secondary`}>
+        {label}
+      </label>
+
+      {isTextarea ? (
+        <textarea
+          readOnly={readOnly}
+          id={name}
+          {...field}
+          {...(rest as any)}
+          rows={rows}
+          className={`block w-full rounded-md p-4 text-sm focus:outline-none border border-gray_300 resize-vertical ${
+            error ? "border border-red-500" : ""
+          } ${isVerified ? "pr-12" : ""}`}
+          placeholder={placeholder}
+          value={field.value || ""}
+          onBlur={() => {
+            field.onBlur();
+            if (onBlur) onBlur();
+          }}
+          style={{
+            backgroundColor: readOnly ? "hsl(0,0%, 90%)" : "",
+            cursor: readOnly ? "not-allowed" : "initial",
+          }}
+        />
+      ) : (
+        <input
+          readOnly={readOnly}
+          id={name}
+          type={showPassword ? "text" : type}
+          {...field}
+          {...rest}
+          className={`block w-full h-8 rounded-md p-4 text-sm focus:outline-none border border-gray_300 ${
+            error ? "border border-red-500" : ""
+          } ${isVerified ? "pr-12" : ""}`}
+          placeholder={placeholder}
+          value={field.value || ""}
+          onBlur={() => {
+            field.onBlur();
+            if (onBlur) onBlur();
+          }}
+          style={{
+            backgroundColor: readOnly ? "hsl(0,0%, 90%)" : "",
+            cursor: readOnly ? "not-allowed" : "initial",
+          }}
+        />
+      )}
 
       {/* Verification Icon */}
       {isVerified && (
@@ -95,7 +112,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
       )}
 
       {/* Password Toggle */}
-      {type === "password" && (
+      {type === "password" && !isTextarea && (
         <button
           type="button"
           onClick={togglePasswordVisibility}
@@ -105,16 +122,6 @@ const CustomInput: React.FC<CustomInputProps> = ({
         </button>
       )}
 
-      <label
-        htmlFor={name}
-        className={`absolute left-4 text-sm font-normal text-grey_200 duration-300 transform scale-75 origin-[0] peer-focus:scale-75 peer-focus:-translate-y-4 ${
-          isFocused || field.value
-            ? "-translate-y-4 scale-75"
-            : "top-1/2 transform -translate-y-2 scale-100"
-        }`}
-      >
-        {label}
-      </label>
       {error && <span className="text-red-500 text-xs">{error.message}</span>}
     </div>
   );

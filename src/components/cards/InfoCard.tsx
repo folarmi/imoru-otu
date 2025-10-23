@@ -24,9 +24,10 @@ const InfoCard: React.FC<InfoCardProps> = ({
   buttonOnClick,
   buttonClassName = "bg-white text-secondary hover:bg-opacity-90 transition-colors",
 }) => {
+  // w-full lg:w-1/2
   return (
     <section
-      className={`bg-primary border-2 border-secondary rounded-lg p-6 w-full lg:w-1/2 drop-shadow-card h-auto  flex flex-col ${className}`}
+      className={`bg-primary border-2 border-secondary rounded-lg p-6  drop-shadow-card h-auto flex flex-col ${className}`}
     >
       <p className="font-bold text-lg sm:text-xl md:text-2xl text-secondary playfair">
         {title}
