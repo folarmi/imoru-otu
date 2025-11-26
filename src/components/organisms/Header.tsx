@@ -4,8 +4,16 @@ import { Link } from "react-router-dom";
 import CustomButton from "../atoms/CustomButton";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Modal from "./Modal";
+import { BankAccountDetails } from "../modals/BankAccountDetails";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [bankAccountModal, setBankAccountModal] = useState(false);
+
+  const toggleBankAccountModal = () => {
+    console.log(bankAccountModal);
+    setBankAccountModal(!bankAccountModal);
+  };
 
   return (
     // <nav className="sticky top-0 z-50 bg-white shadow-sm"> this makes it sticky
@@ -30,7 +38,12 @@ const Header = () => {
               </Link>
             );
           })}
-          <CustomButton variant="secondary" primaryButtonSize="xs">
+          <CustomButton
+            variant="secondary"
+            primaryButtonSize="xs"
+            onClick={toggleBankAccountModal}
+            className="cursor-pointer"
+          >
             Partner with Us
           </CustomButton>
           <CustomButton className="mr-4">Join Us</CustomButton>
@@ -65,8 +78,15 @@ const Header = () => {
               </Link>
             );
           })}
-          <div className="flex flex-col gap-y-3">
-            <CustomButton variant="secondary" primaryButtonSize="xs">
+          <div
+            className="flex flex-col gap-y-3 cursor-pointer"
+            onClick={toggleBankAccountModal}
+          >
+            <CustomButton
+              variant="secondary"
+              primaryButtonSize="xs"
+              onClick={toggleBankAccountModal}
+            >
               Partner with Us
             </CustomButton>
             <CustomButton>Join Us</CustomButton>
@@ -75,6 +95,12 @@ const Header = () => {
       )}
 
       <div className="h-[2px] w-full bg-border"></div>
+
+      <Modal show={bankAccountModal} toggleModal={toggleBankAccountModal}>
+        <div className="p-4">
+          <BankAccountDetails toggleModal={toggleBankAccountModal} />
+        </div>
+      </Modal>
     </nav>
   );
 };
