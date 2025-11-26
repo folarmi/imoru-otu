@@ -2,6 +2,7 @@ import { threePillars } from "@/data";
 import { HeaderText } from "../atoms/HeaderText";
 import { ProjectCard } from "../cards/ProjectCard";
 import projectOne from "@/assets/images/projectOne.svg";
+import welfareInitiatives from "@/assets/images/welfareInitiatives.jpeg";
 import { Check } from "lucide-react";
 import CustomButton from "../atoms/CustomButton";
 
@@ -135,9 +136,9 @@ const CoreProjects = () => {
           desc="Scholarships, tutoring, and mentorship programs for underserved students."
         />
         <ProjectCard
-          img={projectOne}
+          img={welfareInitiatives}
           title="Welfare Initiatives"
-          desc="Scholarships, tutoring, and mentorship programs for underserved students."
+          desc="Community members celebrating food distribution at a local outreach event, holding packages of donated rice and essential supplies. Our programs provide vital support to families in need across Nigeria."
         />
       </section>
 

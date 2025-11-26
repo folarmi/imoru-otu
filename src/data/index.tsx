@@ -53,13 +53,13 @@ export const headerItems = [
 export const stats = [
   {
     id: 1,
-    num: "5+",
+    num: "6+",
     desc: "Years of Service",
     icon: Heart,
   },
   {
     id: 2,
-    num: "100+",
+    num: "450+",
     desc: "Students Supported",
     icon: GraduationCap,
   },
@@ -80,12 +80,12 @@ export const stats = [
 export const statTwo = [
   {
     id: 1,
-    number: "100+",
+    number: "450+",
     desc: "Scholarships Awarded",
   },
   {
     id: 2,
-    number: "₦2M+",
+    number: "₦8M+",
     desc: "In Educational Support",
   },
   {
@@ -260,7 +260,7 @@ export const footerData = {
   organization: {
     name: "Imoru Progressive Group",
     description:
-      "Empowering Imoru's youth through education, cultural preservation, and community welfare since 2019.",
+      "Development of Imoru land Through Culture, Social welfare and Education.",
   },
   quickLinks: [
     { id: 1, label: "About Us", href: "#about" },
@@ -271,8 +271,8 @@ export const footerData = {
   ],
   contact: {
     location: "Imoru, Ondo State, Nigeria",
-    phone: "+234 XXX XXX XXXX",
-    email: "info@ipgimoru.org",
+    phone: "+234 803 420 3441",
+    email: "otuatuluse@gmail.com",
   },
   social: [
     { id: 1, name: "Facebook", icon: Facebook, href: "#" },
@@ -297,13 +297,13 @@ export const missionAndVision = [
   {
     id: 1,
     name: "Our Mission",
-    desc: "To contribute to the holistic development of Imoru community through educational support, cultural preservation, and welfare programs that empower our youth and uplift the less privileged.",
+    desc: "Contribute towards  the development of Imoru commmunity through the promotion of  members welfare, care for  the less privileged and partnership with corporate bodies, individual and government in the provision of free health and basic education among members and the community.",
     icon: Target,
   },
   {
     id: 2,
     name: "Our Vision",
-    desc: "A thriving Imoru community where every youth has access to quality education, cultural heritage is preserved and celebrated, and no member is left behind in times of need.",
+    desc: "To develop Imoru Land  through social welfare support.",
     icon: Award,
   },
 ];
@@ -579,7 +579,7 @@ export const contactUs = [
     id: 3,
     name: "Email",
     icon: Mail,
-    descOne: "info@imoruprogressive.org",
+    descOne: "otuatuluse@gmail.com",
     descTwo: "We reply within 24 hours",
     descThree: "",
   },
@@ -627,6 +627,6 @@ export const visitUs = [
   },
   {
     id: 3,
-    name: " Location: Community Hall, Imoru",
+    name: " Location: Online",
   },
 ];

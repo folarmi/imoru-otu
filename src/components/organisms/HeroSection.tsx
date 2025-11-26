@@ -56,7 +56,8 @@ const HeroSection = () => {
 
           <div className="relative h-full flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-20 max-w-7xl">
             <h1 className="max-w-[876px] font-bold text-white text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] xl:text-[64px] leading-[32px] sm:leading-[40px] md:leading-[52px] lg:leading-[64px] xl:leading-[72px] playfair pb-3 sm:pb-4">
-              Empowering Imoru's Youth: Progress Through Culture and Education
+              Development of Imoru Land Through Culture, Social Welfare and
+              Education
             </h1>
 
             <p className="text-white text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl font-medium">
