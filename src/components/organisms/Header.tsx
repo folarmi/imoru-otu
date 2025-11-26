@@ -2,18 +2,28 @@ import logo from "@/assets/images/logo.svg";
 import { headerItems } from "@/data";
 import { Link } from "react-router-dom";
 import CustomButton from "../atoms/CustomButton";
-import { useState } from "react";
+import { useState, type RefObject } from "react";
 import { Menu, X } from "lucide-react";
 import Modal from "./Modal";
 import { BankAccountDetails } from "../modals/BankAccountDetails";
-const Header = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [bankAccountModal, setBankAccountModal] = useState(false);
+import { scrollToSection } from "@/utils/helper";
 
-  const toggleBankAccountModal = () => {
-    console.log(bankAccountModal);
-    setBankAccountModal(!bankAccountModal);
-  };
+export type SectionRefs = {
+  joinUs: RefObject<HTMLElement>;
+};
+
+type HeaderProps = {
+  sectionRefs: SectionRefs;
+  toggleBankAccountModal: () => void;
+  bankAccountModal: boolean;
+};
+
+const Header = ({
+  sectionRefs,
+  toggleBankAccountModal,
+  bankAccountModal,
+}: HeaderProps) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     // <nav className="sticky top-0 z-50 bg-white shadow-sm"> this makes it sticky
@@ -46,7 +56,14 @@ const Header = () => {
           >
             Partner with Us
           </CustomButton>
-          <CustomButton className="mr-4">Join Us</CustomButton>
+          <CustomButton
+            className="mr-4 cursor-pointer"
+            onClick={() => {
+              scrollToSection(sectionRefs.joinUs);
+            }}
+          >
+            Join Us
+          </CustomButton>
         </section>
 
         {/* Mobile Menu Button */}

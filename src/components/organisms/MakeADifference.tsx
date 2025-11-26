@@ -1,14 +1,26 @@
 import { makeADifference } from "@/data";
 import { Check } from "lucide-react";
+import { useOutletContext } from "react-router-dom";
+import Modal from "./Modal";
+import { BankAccountDetails } from "../modals/BankAccountDetails";
+import { scrollToSection } from "@/utils/helper";
+
+interface OutletContextType {
+  toggleBankAccountModal: () => void;
+  bankAccountModal: boolean;
+  sectionRefs: Record<string, React.RefObject<HTMLElement>>;
+}
 
 const MakeADifference = () => {
+  const { toggleBankAccountModal, bankAccountModal, sectionRefs } =
+    useOutletContext<OutletContextType>();
   return (
     <div className="bg-secondary py-16 md:py-20 px-6 sm:px-8 md:px-11 flex flex-col justify-center items-center rounded-md">
       <p className="playfair font-bold text-3xl sm:text-4xl md:text-5xl text-white text-center leading-tight">
         Ready to Make a Difference?
       </p>
 
-      <p className="font-normal text-sm sm:text-base md:text-lg text-green_200 pt-4 text-white text-center max-w-xl sm:max-w-2xl md:w-[672px]">
+      <p className="font-normal text-sm sm:text-base md:text-lg pt-4 text-white text-center max-w-xl sm:max-w-2xl md:w-[672px]">
         Whether you're an organization ready to scale community impact or an
         individual wanting to give your time, there's a place for you in our
         mission.
@@ -77,11 +89,16 @@ const MakeADifference = () => {
               </div>
 
               <button
-                className="w-full rounded-md py-3 uppercase text-xs sm:text-sm font-semibold transition-transform duration-200 hover:scale-[1.02]"
+                className="w-full rounded-md py-3 uppercase text-xs sm:text-sm font-semibold transition-transform duration-200 hover:scale-[1.02] cursor-pointer"
                 style={{
                   background: buttonBgColor,
                   color: buttonTextColor,
                 }}
+                onClick={
+                  buttonText === "Become A Sponsor"
+                    ? toggleBankAccountModal
+                    : () => scrollToSection(sectionRefs.joinUs)
+                }
               >
                 {buttonText}
               </button>
@@ -89,6 +106,12 @@ const MakeADifference = () => {
           )
         )}
       </div>
+
+      <Modal show={bankAccountModal} toggleModal={toggleBankAccountModal}>
+        <div className="p-4">
+          <BankAccountDetails toggleModal={toggleBankAccountModal} />
+        </div>
+      </Modal>
     </div>
   );
 };
