@@ -20,6 +20,11 @@ export default {
         gray_100: "#3B3D40",
         gray_200: "#E0DCD1",
         gray_300: "#EBE8E0",
+        gray_400: "#0A0A0A",
+        gray_500: "#717182",
+        gray_600: "#E5E7EB",
+        gray_700: "#4A5565",
+        gray_800: "#364153",
       },
       boxShadow: {},
       dropShadow: {

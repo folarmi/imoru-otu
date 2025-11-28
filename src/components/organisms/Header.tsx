@@ -113,7 +113,11 @@ const Header = ({
 
       <div className="h-[2px] w-full bg-border"></div>
 
-      <Modal show={bankAccountModal} toggleModal={toggleBankAccountModal}>
+      <Modal
+        ifClose={false}
+        show={bankAccountModal}
+        toggleModal={toggleBankAccountModal}
+      >
         <div className="p-4">
           <BankAccountDetails toggleModal={toggleBankAccountModal} />
         </div>

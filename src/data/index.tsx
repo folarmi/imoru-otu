@@ -1,8 +1,10 @@
 import {
   Award,
   BookOpen,
+  Building2,
   Calendar,
   Clock,
+  CreditCard,
   Facebook,
   GraduationCap,
   HandHeart,
@@ -18,6 +20,7 @@ import {
   ShieldAlertIcon,
   Target,
   Twitter,
+  User,
   UserPlus,
   Users,
 } from "lucide-react";
@@ -628,5 +631,26 @@ export const visitUs = [
   {
     id: 3,
     name: " Location: Online",
+  },
+];
+
+export const bankDetails = [
+  {
+    id: 1,
+    name: "Account Name",
+    icon: User,
+    accountName: "Imoru otu atuluse socio cultural club",
+  },
+  {
+    id: 2,
+    name: "Account Number",
+    icon: CreditCard,
+    accountName: "0205157018",
+  },
+  {
+    id: 3,
+    name: "Bank Name",
+    icon: Building2,
+    accountName: "Union Bank",
   },
 ];
