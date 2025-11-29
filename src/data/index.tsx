@@ -24,9 +24,11 @@ import {
   UserPlus,
   Users,
 } from "lucide-react";
-import pillarOne from "@assets/images/pillarOne.svg";
+import pillarTwo from "@assets/images/pillarTwo.jpeg";
+import edu from "@assets/images/edu.jpeg";
 import eventOne from "@assets/images/eventOne.svg";
 import eventTwo from "@assets/images/eventTwo.svg";
+import cultural from "@assets/images/cultural.png";
 import eventThree from "@assets/images/eventThree.svg";
 import countryList from "react-select-country-list";
 
@@ -41,10 +43,15 @@ export const headerItems = [
     name: "About",
     link: "/about-us",
   },
+  // {
+  //   id: 3,
+  //   name: "News and Events",
+  //   link: "/news-and-events",
+  // },
   {
-    id: 3,
-    name: "News and Events",
-    link: "/news-and-events",
+    id: 5,
+    name: "Gallery",
+    link: "/gallery",
   },
   {
     id: 4,
@@ -109,7 +116,7 @@ export const threePillars = [
       "Academic Mentorship",
       "Career Guidance",
     ],
-    image: pillarOne,
+    image: edu,
     icon: BookOpen,
   },
   {
@@ -122,7 +129,7 @@ export const threePillars = [
       "Food Security Programs",
       "Community Development",
     ],
-    image: pillarOne,
+    image: pillarTwo,
     icon: HandHeart,
   },
   {
@@ -135,7 +142,7 @@ export const threePillars = [
       "Traditional Arts",
       "Heritage Documentation",
     ],
-    image: pillarOne,
+    image: cultural,
     icon: Landmark,
   },
 ];

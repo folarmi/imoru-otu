@@ -3,7 +3,7 @@ import {
   CoreProjects,
   HeroSection,
   JoinClub,
-  LatestNewsAndEvents,
+  // LatestNewsAndEvents,
   MakeADifference,
   Stat,
 } from "@/components/organisms";
@@ -24,7 +24,7 @@ const Home = () => {
         <JoinClub />
       </section>
       <MakeADifference />
-      <LatestNewsAndEvents />
+      {/* <LatestNewsAndEvents /> */}
     </div>
   );
 };

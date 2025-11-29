@@ -6,7 +6,6 @@ import welfareInitiatives from "@/assets/images/welfareInitiatives.jpeg";
 import educationalSupport from "@/assets/images/educationalSupport.jpeg";
 import communityEmpowerment from "@/assets/images/communityEmpowerment.jpeg";
 import { Check } from "lucide-react";
-import CustomButton from "../atoms/CustomButton";
 
 const CoreProjects = () => {
   return (
@@ -47,7 +46,7 @@ education, welfare, and culture."
         />
 
         <div className="my-8 sm:my-12 md:my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 ">
-          {threePillars.map(
+          {threePillars?.map(
             ({ benefits, desc, icon: Icon, id, image, title }) => {
               return (
                 <div key={id} className="max-w-full lg:max-w-[409px] mx-auto">
@@ -56,8 +55,14 @@ education, welfare, and culture."
                     <div className="relative h-40 sm:h-48 overflow-hidden">
                       <img
                         src={image}
+                        className="absolute inset-0 w-full h-full object-cover blur-sm scale-110"
+                      />
+
+                      {/* Foreground Image */}
+                      <img
+                        src={image}
                         alt="Cultural celebration"
-                        className="w-full h-full object-cover"
+                        className="relative w-full h-full object-contain z-10"
                       />
                       {/* Dark Overlay */}
                       <div className="absolute inset-0 bg-black bg-opacity-20"></div>
@@ -104,7 +109,7 @@ education, welfare, and culture."
           )}
         </div>
 
-        <div className="flex flex-col justify-center items-center">
+        {/* <div className="flex flex-col justify-center items-center">
           <CustomButton
             variant="secondary"
             className="uppercase w-full sm:w-[342px] h-[44px]"
@@ -114,7 +119,7 @@ education, welfare, and culture."
           <p className="text-xs sm:text-sm text-green_200 pt-3 font-normal text-center px-4">
             Partnership opportunities available for each program area
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
