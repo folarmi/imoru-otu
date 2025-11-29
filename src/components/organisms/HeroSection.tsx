@@ -1,7 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import CustomButton from "../atoms/CustomButton";
 import { stats } from "@/data";
+import Modal from "./Modal";
+import { BankAccountDetails } from "../modals/BankAccountDetails";
+import { useOutletContext } from "react-router-dom";
+import { scrollToSection } from "@/utils/helper";
+
+interface OutletContextType {
+  bankAccountModal: boolean;
+  toggleBankAccountModal: () => void;
+  sectionRefs: any;
+}
 
 const HeroSection = () => {
+  const { bankAccountModal, toggleBankAccountModal, sectionRefs } =
+    useOutletContext<OutletContextType>();
   return (
     <>
       <div className="mt-6 rounded-tl-xl rounded-tr-xl overflow-hidden ">
@@ -21,10 +34,20 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <CustomButton variant="cta" className="px-6 sm:px-8 py-3 ">
+              <CustomButton
+                variant="cta"
+                className="px-6 sm:px-8 py-3 cursor-pointer"
+                onClick={toggleBankAccountModal}
+              >
                 Partner with Us
               </CustomButton>
-              <CustomButton variant="outline" className="px-6 sm:px-8 py-3">
+              <CustomButton
+                variant="outline"
+                className="px-6 sm:px-8 py-3 cursor-pointer"
+                onClick={() => {
+                  scrollToSection(sectionRefs.joinUs);
+                }}
+              >
                 Join as a Member
               </CustomButton>
             </div>
@@ -49,6 +72,12 @@ const HeroSection = () => {
             })}
           </div>
         </div>
+
+        <Modal show={bankAccountModal} toggleModal={toggleBankAccountModal}>
+          <div className="p-4">
+            <BankAccountDetails />
+          </div>
+        </Modal>
       </div>
     </>
   );

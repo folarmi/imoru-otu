@@ -15,6 +15,7 @@ export default {
         orange_200: "#D7BE94",
         orange_300: "rgba(201, 180, 131, 0.2)",
         green_200: "#3E746F",
+        green_300: "#0E3622",
         yellow_100: "#FFBF00",
         yellow_200: "#C9B48333",
         gray_100: "#3B3D40",
@@ -25,6 +26,7 @@ export default {
         gray_600: "#E5E7EB",
         gray_700: "#4A5565",
         gray_800: "#364153",
+        gray_900: "#101828",
       },
       boxShadow: {},
       dropShadow: {

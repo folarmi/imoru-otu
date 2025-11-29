@@ -29,6 +29,8 @@ import edu from "@assets/images/edu.jpeg";
 import eventOne from "@assets/images/eventOne.svg";
 import eventTwo from "@assets/images/eventTwo.svg";
 import cultural from "@assets/images/cultural.png";
+import VP from "@assets/images/VP.jpeg";
+import president from "@assets/images/president.jpeg";
 import eventThree from "@assets/images/eventThree.svg";
 import countryList from "react-select-country-list";
 
@@ -378,32 +380,44 @@ export const executiveLeadership = [
   {
     id: 1,
     name: "President",
-    type: "Executive Leadership",
+    execName: "Mr Olugbade Rotimi",
+    img: president,
+    bio: "Rotimi Olugbade is an accomplished finance professional with nearly 20 years of experience and advanced degrees in Accounting and Finance. He currently leads as Finance & Administration Manager at Sammya Nigeria Limited and serves as President of the Imoru Otu Atuluse Socio-Cultural Club, driving both corporate excellence and community development.",
   },
   {
     id: 2,
     name: "Vice President",
-    type: "Executive Leadership",
+    execName: "Mrs. Grace Oyegoke",
+    img: VP,
+    bio: "Mrs. Grace Oyegoke is the MD/CEO of TOPGRACE ENTERPRISES, specializing in construction, real estate, and building materials. She is also an accomplished gospel artist, worship leader, and founder of HOUSE OF GRACE ministry, with songs streaming on YouTube and Spotify. A committed philanthropist, she was elected Vice-President of IPG in September 2025, working to advance the club and drive development in Imoru town.",
   },
   {
     id: 3,
     name: "General Secretary",
-    type: "Administrative Affairs",
+    execName: "Banji Oredola",
+    img: VP,
+    bio: "Banji Oredola, General Secretary of  IPG Association, brings over 20 years of nursing experience along with multiple certifications and degrees from institutions such as the College of Nursing and Technology (California), Howard Community College, and Allegany College of Maryland. Dedicated to driving excellence and fostering new ideas in healthcare. Banji is committed to advancing and supporting the growth of IPG.",
   },
   {
     id: 4,
     name: "Financial Secretary",
-    type: "Financial Management",
+    execName: "Mrs. Grace Oyegoke",
+    img: VP,
+    bio: "Mrs. Grace Oyegoke is the MD/CEO of TOPGRACE ENTERPRISES, specializing in construction, real estate, and building materials. She is also an accomplished gospel artist, worship leader, and founder of HOUSE OF GRACE ministry, with songs streaming on YouTube and Spotify. A committed philanthropist, she was elected Vice-President of IPG in September 2025, working to advance the club and drive development in Imoru town.",
   },
   {
     id: 5,
     name: "Social/Welfare Officer",
-    type: "Member Welfare",
+    execName: "Member Welfare",
+    img: VP,
+    bio: "With a decade of experience in non-profit administration, our General Secretary has been instrumental in streamlining our operations and enhancing member engagement. Their dedication to transparency and effective communication has significantly contributed to our organization's growth and impact.",
   },
   {
     id: 6,
     name: "Public Relations Officer",
-    type: "Communications",
+    execName: "Communications",
+    img: president,
+    bio: "With a decade of experience in non-profit administration, our General Secretary has been instrumental in streamlining our operations and enhancing member engagement. Their dedication to transparency and effective communication has significantly contributed to our organization's growth and impact.",
   },
 ];
 
