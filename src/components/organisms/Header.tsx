@@ -1,6 +1,6 @@
 import logo from "@/assets/images/logo.svg";
 import { headerItems } from "@/data";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CustomButton from "../atoms/CustomButton";
 import { useState, type RefObject } from "react";
 import { Menu, X } from "lucide-react";
@@ -43,9 +43,20 @@ const Header = ({
         <section className="hidden lg:flex items-center gap-x-5">
           {headerItems?.map(({ id, link, name }) => {
             return (
-              <Link className="font-medium text-base" key={id} to={link}>
-                {name}
-              </Link>
+              // <NavLink className="font-medium text-base" key={id} to={link}>
+              //   {name}
+              // </NavLink>
+
+              <NavLink key={id} to={link} className="font-medium text-base">
+                {({ isActive }) => (
+                  <span className="flex items-center gap-2">
+                    {isActive && (
+                      <span className="w-2 h-2 bg-black rounded-full"></span>
+                    )}
+                    {name}
+                  </span>
+                )}
+              </NavLink>
             );
           })}
           <CustomButton

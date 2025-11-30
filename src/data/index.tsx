@@ -32,6 +32,36 @@ import cultural from "@assets/images/cultural.png";
 import VP from "@assets/images/VP.jpeg";
 import president from "@assets/images/president.jpeg";
 import eventThree from "@assets/images/eventThree.svg";
+import imgOne from "@assets/images/imgOne.jpeg";
+import imgTwo from "@assets/images/imgTwo.jpeg";
+import imgThree from "@assets/images/imgThree.jpeg";
+import imgFour from "@assets/images/imgFour.jpeg";
+import imgFive from "@assets/images/imgFive.jpeg";
+import imgSix from "@assets/images/imgSix.jpeg";
+import imgSeven from "@assets/images/imgSeven.jpeg";
+import imgEight from "@assets/images/imgEight.jpeg";
+import imgNine from "@assets/images/imgNine.jpeg";
+import imgTen from "@assets/images/imgTen.jpeg";
+import imgEleven from "@assets/images/imgEleven.jpeg";
+import imgTwelve from "@assets/images/imgTwelve.jpeg";
+import imgThirteen from "@assets/images/imgThirteen.jpeg";
+import imgFourteen from "@assets/images/imgFourteen.jpeg";
+import imgFifteen from "@assets/images/imgFifteen.jpeg";
+import imgSixteen from "@assets/images/imgSixteen.jpeg";
+import imgSeventeen from "@assets/images/imgSeventeen.jpeg";
+import imgEighteen from "@assets/images/imgEighteen.jpeg";
+import imgNineteen from "@assets/images/imgNineteen.jpeg";
+import imgTwenty from "@assets/images/imgTwenty.jpeg";
+import imgTwentyOne from "@assets/images/imgTwentyOne.jpeg";
+import imgTwentyTwo from "@assets/images/imgTwentyTwo.jpeg";
+import imgTwentyThree from "@assets/images/imgTwentyThree.jpeg";
+import imgTwentyFour from "@assets/images/imgTwentyFour.jpeg";
+import imgTwentyFive from "@assets/images/imgTwentyFive.jpeg";
+import imgTwentySix from "@assets/images/imgTwentySix.jpeg";
+import imgTwentySeven from "@assets/images/imgTwentySeven.jpeg";
+import imgTwentyEight from "@assets/images/imgTwentyEight.jpeg";
+import imgTwentyNine from "@assets/images/imgTwentyNine.jpeg";
+import imgThirty from "@assets/images/imgThirty.jpeg";
 import countryList from "react-select-country-list";
 
 export const headerItems = [
@@ -673,5 +703,128 @@ export const bankDetails = [
     name: "Bank Name",
     icon: Building2,
     accountName: "Union Bank",
+  },
+];
+
+export const images = [
+  {
+    id: 1,
+    img: imgOne,
+  },
+  {
+    id: 2,
+    img: imgTwo,
+  },
+  {
+    id: 3,
+    img: imgThree,
+  },
+  {
+    id: 4,
+    img: imgFour,
+  },
+  {
+    id: 5,
+    img: imgFive,
+  },
+  {
+    id: 6,
+    img: imgSix,
+  },
+  {
+    id: 7,
+    img: imgSeven,
+  },
+  {
+    id: 8,
+    img: imgEight,
+  },
+  {
+    id: 9,
+    img: imgNine,
+  },
+  {
+    id: 10,
+    img: imgTen,
+  },
+  {
+    id: 11,
+    img: imgEleven,
+  },
+  {
+    id: 12,
+    img: imgTwelve,
+  },
+  {
+    id: 13,
+    img: imgThirteen,
+  },
+  {
+    id: 14,
+    img: imgFourteen,
+  },
+  {
+    id: 15,
+    img: imgFifteen,
+  },
+  {
+    id: 16,
+    img: imgSixteen,
+  },
+  {
+    id: 17,
+    img: imgSeventeen,
+  },
+  {
+    id: 18,
+    img: imgEighteen,
+  },
+  {
+    id: 19,
+    img: imgNineteen,
+  },
+  {
+    id: 20,
+    img: imgTwenty,
+  },
+  {
+    id: 21,
+    img: imgTwentyOne,
+  },
+  {
+    id: 22,
+    img: imgTwentyTwo,
+  },
+  {
+    id: 23,
+    img: imgTwentyThree,
+  },
+  {
+    id: 24,
+    img: imgTwentyFour,
+  },
+  {
+    id: 25,
+    img: imgTwentyFive,
+  },
+  {
+    id: 26,
+    img: imgTwentySix,
+  },
+  {
+    id: 27,
+    img: imgTwentySeven,
+  },
+  {
+    id: 28,
+    img: imgTwentyEight,
+  },
+  {
+    id: 29,
+    img: imgTwentyNine,
+  },
+  {
+    id: 30,
+    img: imgThirty,
   },
 ];
