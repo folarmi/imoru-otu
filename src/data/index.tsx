@@ -26,8 +26,8 @@ import {
 } from "lucide-react";
 import pillarTwo from "@assets/images/pillarTwo.jpeg";
 import edu from "@assets/images/edu.jpeg";
-import eventOne from "@assets/images/eventOne.svg";
-import eventTwo from "@assets/images/eventTwo.svg";
+import eventOne from "@assets/images/projectOne.svg";
+import eventTwo from "@assets/images/projectOne.svg";
 import cultural from "@assets/images/cultural.png";
 import VP from "@assets/images/VP.jpeg";
 import president from "@assets/images/president.jpeg";

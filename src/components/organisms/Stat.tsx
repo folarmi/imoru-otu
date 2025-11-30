@@ -2,6 +2,8 @@ import { statTwo } from "@/data";
 import { HeaderText } from "../atoms/HeaderText";
 import { StatCard } from "../cards/StatCard";
 import foundation from "@/assets/images/foundation.jpeg";
+import educationalSupport from "@/assets/images/educationalSupport.jpeg";
+import eventTwo from "@/assets/images/welfareInitiatives.jpeg";
 
 const Stat = () => {
   return (
@@ -42,16 +44,16 @@ const Stat = () => {
         <StatCard
           year="2020-2022"
           title="Growth & Impact"
-          desc="Expanded scholarship programs and cultural events, supporting 50+ students annually."
-          imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
-          img={foundation}
+          desc="Students receiving exercise books from IPG as part of our mission to support learning and empower the next generation"
+          imgDesc="Imoru LGA"
+          img={educationalSupport}
         />
         <StatCard
           year="2023-Present"
           title="Sustained Excellence"
-          desc="Over 100 students supported, community welfare programs established, cultural heritage preserved."
-          imgDesc="IPG at the ribbon cutting ceremony held at Radisson Blue hotel Imoru LGA, Ondo state, on the 14th of September 2019 "
-          img={foundation}
+          desc="Families joyfully raising food items received from our welfare program, reflecting hope and shared support."
+          imgDesc="Imoru LGA, Ondo state "
+          img={eventTwo}
         />
       </div>
     </div>
