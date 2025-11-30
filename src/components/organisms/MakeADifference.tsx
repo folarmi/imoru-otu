@@ -109,7 +109,7 @@ const MakeADifference = () => {
 
       <Modal show={bankAccountModal} toggleModal={toggleBankAccountModal}>
         <div className="p-4">
-          <BankAccountDetails toggleModal={toggleBankAccountModal} />
+          <BankAccountDetails />
         </div>
       </Modal>
     </div>
