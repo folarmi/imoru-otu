@@ -84,7 +84,7 @@ function Pagination({
           ) : (
             <button
               key={page}
-              onClick={() => onPageChange(page)}
+              onClick={() => onPageChange(page as number)}
               className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg font-medium transition-colors ${
                 currentPage === page
                   ? "bg-gray-900 text-white"
