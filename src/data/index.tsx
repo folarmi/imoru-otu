@@ -29,8 +29,11 @@ import edu from "@assets/images/edu.jpeg";
 import eventOne from "@assets/images/projectOne.svg";
 import eventTwo from "@assets/images/projectOne.svg";
 import cultural from "@assets/images/cultural.png";
+import president from "@assets/images/presidentTwo.jpeg";
 import VP from "@assets/images/VP.jpeg";
-import president from "@assets/images/president.jpeg";
+import finSec from "@assets/images/finSec.jpeg";
+import genSec from "@assets/images/genSec.jpeg";
+import welfare from "@assets/images/Welfare.jpeg";
 import eventThree from "@assets/images/eventThree.svg";
 import imgOne from "@assets/images/imgOne.jpeg";
 import imgTwo from "@assets/images/imgTwo.jpeg";
@@ -424,29 +427,29 @@ export const executiveLeadership = [
   {
     id: 3,
     name: "General Secretary",
-    execName: "Banji Oredola",
-    img: VP,
+    execName: "Mr Banji Oredola",
+    img: genSec,
     bio: "Banji Oredola, General Secretary of  IPG Association, brings over 20 years of nursing experience along with multiple certifications and degrees from institutions such as the College of Nursing and Technology (California), Howard Community College, and Allegany College of Maryland. Dedicated to driving excellence and fostering new ideas in healthcare. Banji is committed to advancing and supporting the growth of IPG.",
   },
   {
     id: 4,
     name: "Financial Secretary",
-    execName: "Mrs. Grace Oyegoke",
-    img: VP,
+    execName: "Mr Dare Olufowose",
+    img: finSec,
     bio: "Mrs. Grace Oyegoke is the MD/CEO of TOPGRACE ENTERPRISES, specializing in construction, real estate, and building materials. She is also an accomplished gospel artist, worship leader, and founder of HOUSE OF GRACE ministry, with songs streaming on YouTube and Spotify. A committed philanthropist, she was elected Vice-President of IPG in September 2025, working to advance the club and drive development in Imoru town.",
   },
   {
     id: 5,
     name: "Social/Welfare Officer",
-    execName: "Member Welfare",
-    img: VP,
-    bio: "With a decade of experience in non-profit administration, our General Secretary has been instrumental in streamlining our operations and enhancing member engagement. Their dedication to transparency and effective communication has significantly contributed to our organization's growth and impact.",
+    execName: "Mrs Stella Ajoke Obasorun",
+    img: welfare,
+    bio: "An entrepreneur with an HND in Accounting, Stella Ajoke Obasorun serves as the Welfare Officer of IPG, elected in September 2025. She plays a vital role in supporting members, organizing welfare activities, and fostering a caring, inclusive environment within the organization. Stella’s passion for people and her dedication to community upliftment make her an integral part of IPG’s mission.",
   },
   {
     id: 6,
     name: "Public Relations Officer",
-    execName: "Communications",
-    img: president,
+    execName: "Mr Seun Isijola",
+    img: finSec,
     bio: "With a decade of experience in non-profit administration, our General Secretary has been instrumental in streamlining our operations and enhancing member engagement. Their dedication to transparency and effective communication has significantly contributed to our organization's growth and impact.",
   },
 ];
