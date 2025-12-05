@@ -12,6 +12,7 @@ const StatCard = ({ desc, img, imgDesc, title, year }: StatCardProp) => {
       <img
         src={img}
         loading="lazy"
+        alt={imgDesc}
         className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-h-0 group-hover:max-h-48 sm:group-hover:max-h-64 md:group-hover:max-h-96 w-full md:w-auto object-cover"
       />
 

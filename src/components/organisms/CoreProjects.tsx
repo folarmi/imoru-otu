@@ -55,6 +55,7 @@ education, welfare, and culture."
                     <div className="relative h-40 sm:h-48 overflow-hidden">
                       <img
                         src={image}
+                        alt="Cultural celebration"
                         className="absolute inset-0 w-full h-full object-cover blur-sm scale-110"
                       />
 
