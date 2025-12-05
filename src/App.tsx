@@ -10,26 +10,30 @@ import { Helmet } from "react-helmet-async";
 
 function App() {
   return (
-    <Helmet>
-      <title>Imoru Otu Atuluse</title>
+    <>
+      <Helmet>
+        <title>Imoru Otu Atuluse</title>
 
-      <meta
-        name="description"
-        content="A non-profit, non-political organization dedicated to community development,
-cultural preservation, and social welfare support since 2019."
-      />
+        <meta
+          name="description"
+          content="A non-profit, non-political organization dedicated to community development,
+      cultural preservation, and social welfare support since 2019."
+        />
 
-      <meta
-        name="keywords"
-        content="Imoru Otu Atuluse, imoru, Ondo, NGO, web developer"
-      />
+        <meta
+          name="keywords"
+          content="Imoru Otu Atuluse, imoru, Ondo, NGO, web developer"
+        />
+
+        <link rel="canonical" href="https://imoruotuatuluse.com.ng" />
+      </Helmet>
+
       <StoreProvider>
         <QueryClientContextProvider>
-          {/* <AuthProvider> */}
-          {/* <Theme> */}
           <Router>
             <RoutePage />
           </Router>
+
           <ToastContainer
             position="top-center"
             pauseOnHover
@@ -41,8 +45,7 @@ cultural preservation, and social welfare support since 2019."
           />
         </QueryClientContextProvider>
       </StoreProvider>
-      <link rel="canonical" href="https://imoruotuatuluse.com.ng" />
-    </Helmet>
+    </>
   );
 }
 
