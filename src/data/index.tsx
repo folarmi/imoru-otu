@@ -409,6 +409,82 @@ export const governance = [
   },
 ];
 
+export const boardOfTrustees = [
+  {
+    id: 1,
+    name: "Chairman",
+    execName: "Mr Arowolo Emmanuel",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 2,
+    name: "Secretary",
+    execName: "Dr Emmanuel Ojowuro",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 3,
+    name: "Member",
+    execName: "Mrs Kemi Oluagbakan",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 4,
+    name: "Member",
+    execName: "Mr Olumide Enahoro",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 5,
+    name: "Member",
+    execName: "Mr Rotimi Olugbade",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 6,
+    name: "Member",
+    execName: "Mr Adekola Adejola",
+    img: "",
+    bio: "",
+  },
+];
+
+export const specialCommittee = [
+  {
+    id: 1,
+    name: " Project committee Chairman",
+    execName: "Mr Dapo Aruwajoye",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 2,
+    name: "Fund raising committee chairman",
+    execName: "Mr Kunle Oredola",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 3,
+    name: "Planning committee chairman",
+    execName: "Dr Emmanuel Ojowuro",
+    img: "",
+    bio: "",
+  },
+  {
+    id: 4,
+    name: "Welfare committee chairperson",
+    execName: "Mrs Olawunmi Balogun",
+    img: "",
+    bio: "",
+  },
+];
+
 export const executiveLeadership = [
   {
     id: 1,
@@ -450,6 +526,20 @@ export const executiveLeadership = [
     name: "Public Relations Officer",
     execName: "Mr Seun Isijola",
     img: finSec,
+    bio: "With a decade of experience in non-profit administration, our General Secretary has been instrumental in streamlining our operations and enhancing member engagement. Their dedication to transparency and effective communication has significantly contributed to our organization's growth and impact.",
+  },
+  {
+    id: 7,
+    name: "Assistant secretary",
+    execName: "Dauda  Abanikanda",
+    img: "",
+    bio: "With a decade of experience in non-profit administration, our General Secretary has been instrumental in streamlining our operations and enhancing member engagement. Their dedication to transparency and effective communication has significantly contributed to our organization's growth and impact.",
+  },
+  {
+    id: 8,
+    name: "Assistant financial secretary",
+    execName: "Kunle Oredola",
+    img: "",
     bio: "With a decade of experience in non-profit administration, our General Secretary has been instrumental in streamlining our operations and enhancing member engagement. Their dedication to transparency and effective communication has significantly contributed to our organization's growth and impact.",
   },
 ];
