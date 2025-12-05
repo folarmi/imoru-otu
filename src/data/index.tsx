@@ -413,9 +413,9 @@ export const executiveLeadership = [
   {
     id: 1,
     name: "President",
-    execName: "Mr Olugbade Rotimi",
+    execName: "Mr Rotimi Olugbade",
     img: president,
-    bio: "Rotimi Olugbade is an accomplished finance professional with nearly 20 years of experience and advanced degrees in Accounting and Finance. He currently leads as Finance & Administration Manager at Sammya Nigeria Limited and serves as President of the Imoru Otu Atuluse Socio-Cultural Club, driving both corporate excellence and community development.",
+    bio: "Rotimi Olugbade is an experienced accountant and chartered administrator with nearly 20 years of professional practice. He serves as the Finance & Administration Manager at Sammya Nigeria Limited and holds degrees from LASU (B.Sc. Accounting) and OAU (MBA – Finance & Accounting). A committed community developer, Rotimi previously led NISA (2005–2007), served as IPG Financial Secretary, and has been a member of the association’s Board of Trustees since 2020. He became President of the Imoru Otu Atuluse Socio-Cultural Club (IPG) in September 2025 and continues to drive unity, progress, and cultural development in Imoru.",
   },
   {
     id: 2,
@@ -436,7 +436,7 @@ export const executiveLeadership = [
     name: "Financial Secretary",
     execName: "Mr Dare Olufowose",
     img: finSec,
-    bio: "Mrs. Grace Oyegoke is the MD/CEO of TOPGRACE ENTERPRISES, specializing in construction, real estate, and building materials. She is also an accomplished gospel artist, worship leader, and founder of HOUSE OF GRACE ministry, with songs streaming on YouTube and Spotify. A committed philanthropist, she was elected Vice-President of IPG in September 2025, working to advance the club and drive development in Imoru town.",
+    bio: "Mr. Olufowose Dare Emmanuel is a Business Manager, Operations at Landover Company Limited with over two decades of experience in accounting and administration. He holds degrees in Economics from LASU and OAU, and is a proud alumnus of Ijagba/Imoru Grammar School. A founding member and current Financial Secretary of the Imoru Otu Atuluse Socio-Cultural Club, he is known for his honesty, loyalty, and dedication.",
   },
   {
     id: 5,
